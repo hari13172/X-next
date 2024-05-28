@@ -15,13 +15,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="flex justify-between max-w-6xl m-auto">
-          <div>
+          <div className="hidden sm:inline border-r h-screen">
             <Sidebar />
           </div>
 
           <div>{children}</div>
 
-          <div>
+          <div className="lg:flex-col p-3 h-screen border-l hidden lg:flex w-[24rem]">
+            <div className="sticky top-0 bg-white py-2">
+              <input
+                type="text"
+                placeholder="search"
+                className="bg-gray-100 border border-gray-200 rounded-3xl tex-sm w-full px-4 py-2"
+              />
+            </div>
             <News />
           </div>
         </div>
