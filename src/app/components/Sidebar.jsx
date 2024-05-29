@@ -23,17 +23,17 @@ export default function Sidebar() {
 
         {session ? (
           <button
-            onClick={() => signIn()}
-            className="bg-blue-500 text-white w-48 h-9 rounded-full  hover:brightness-95 shadow-md transition-all duration-200 hidden xl:inline font-semibold"
-          >
-            Sign in
-          </button>
-        ) : (
-          <button
             onClick={() => signOut()}
             className="bg-blue-500 text-white w-48 h-9 rounded-full  hover:brightness-95 shadow-md transition-all duration-200 hidden xl:inline font-semibold"
           >
             Sign Out
+          </button>
+        ) : (
+          <button
+            onClick={() => signIn()}
+            className="bg-blue-500 text-white w-48 h-9 rounded-full  hover:brightness-95 shadow-md transition-all duration-200 hidden xl:inline font-semibold"
+          >
+            Sign in
           </button>
         )}
       </div>
