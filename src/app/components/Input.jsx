@@ -83,6 +83,7 @@ export default function Input() {
     setText("");
     setImageUrl(null);
     setSelectImage(null);
+    location.reload()
   };
 
   if (!session) return null;
